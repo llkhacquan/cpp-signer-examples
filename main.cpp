@@ -179,6 +179,7 @@ int main() {
         sign_hash(eip712_hash, signature);
 
         // Output the signature
+        // 0x58343fc20c55526920837f4f0bbad2f1823730b9dc2cb154e6d7feb4ca750cae6db86703abba6985fb271bef2a248c5e930849ccf26eec511ea7fa8d773be3fb
         std::cout << "Signature: 0x" << signature << std::endl;
 
     } catch (const std::exception& ex) {
