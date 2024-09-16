@@ -1,0 +1,48 @@
+{
+  "types": {
+    "EIP712Domain": [
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "version",
+        "type": "string"
+      },
+      {
+        "name": "chainId",
+        "type": "uint256"
+      },
+      {
+        "name": "verifyingContract",
+        "type": "address"
+      }
+    ],
+    "Register": [
+      {
+        "name": "key",
+        "type": "address"
+      },
+      {
+        "name": "message",
+        "type": "string"
+      },
+      {
+        "name": "nonce",
+        "type": "uint64"
+      }
+    ]
+  },
+  "primaryType": "Register",
+  "domain": {
+    "name": "BSX Testnet",
+    "version": "1",
+    "chainId": 421614,
+    "verifyingContract": "0xb4a246571d9f4e98dc86d70c0ab23cd319754439"
+  },
+  "message": {
+    "key": "0xC8B82f90d7aD2C4e556c382d8EA3054839161fD8",
+    "message": "Please sign in with your wallet to access bsx.exchange. You are signing in on 2024-09-16 16:39:17 (GMT). This message is exclusively signed with bsx.exchange for security.",
+    "nonce": "1726504757657000000"
+  }
+}
