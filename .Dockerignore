@@ -1,0 +1,7 @@
+secp256k1
+build
+CMakeFiles
+eip712_signer
+*.cmake
+CMakeCache.txt
+Makefile
