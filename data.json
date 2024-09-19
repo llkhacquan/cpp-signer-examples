@@ -18,22 +18,34 @@
         "type": "address"
       }
     ],
-    "Register": [
+    "Order": [
       {
-        "name": "key",
+        "name": "sender",
         "type": "address"
       },
       {
-        "name": "message",
-        "type": "string"
+        "name": "size",
+        "type": "uint128"
+      },
+      {
+        "name": "price",
+        "type": "uint128"
       },
       {
         "name": "nonce",
         "type": "uint64"
+      },
+      {
+        "name": "productIndex",
+        "type": "uint8"
+      },
+      {
+        "name": "orderSide",
+        "type": "uint8"
       }
     ]
   },
-  "primaryType": "Register",
+  "primaryType": "Order",
   "domain": {
     "name": "BSX Testnet",
     "version": "1",
@@ -41,8 +53,11 @@
     "verifyingContract": "0xb4a246571d9f4e98dc86d70c0ab23cd319754439"
   },
   "message": {
-    "key": "0xC8B82f90d7aD2C4e556c382d8EA3054839161fD8",
-    "message": "Please sign in with your wallet to access bsx.exchange. You are signing in on 2024-09-16 16:39:17 (GMT). This message is exclusively signed with bsx.exchange for security.",
-    "nonce": "1726504757657000000"
+    "sender": "0x75F585337F28e7420B684A5b41fCfA1c55A7f2E6",
+    "size": "1235000000000000000",
+    "price": "1800000000000000000000",
+    "nonce": "1726730652379000000",
+    "productIndex": 1,
+    "orderSide": 0
   }
 }

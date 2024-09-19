@@ -16,8 +16,8 @@ RUN apt-get update && apt-get install -y \
     autoconf \
     automake \
     pkg-config \
-    libjsoncpp-dev
-
+    libjsoncpp-dev \
+    libsecp256k1-dev
 # Install nlohmann/json
 RUN apt-get install -y nlohmann-json3-dev
 
@@ -40,7 +40,7 @@ WORKDIR /app
 COPY . /app
 
 # Build the application
-RUN cmake . && make
+# RUN cmake . && make
 
 # Set entrypoint
-ENTRYPOINT ["./eip712_signer"]
+# ENTRYPOINT ["./eip712_signer"]
